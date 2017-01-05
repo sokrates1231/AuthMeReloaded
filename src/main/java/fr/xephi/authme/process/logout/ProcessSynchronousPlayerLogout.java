@@ -6,6 +6,7 @@ import fr.xephi.authme.events.LogoutEvent;
 import fr.xephi.authme.listener.protocollib.ProtocolLibService;
 import fr.xephi.authme.message.MessageKey;
 import fr.xephi.authme.permission.AuthGroupType;
+import fr.xephi.authme.service.BungeeService;
 import fr.xephi.authme.service.CommonService;
 import fr.xephi.authme.process.SynchronousProcess;
 import fr.xephi.authme.settings.properties.RegistrationSettings;
@@ -42,6 +43,9 @@ public class ProcessSynchronousPlayerLogout implements SynchronousProcess {
     @Inject
     private TeleportationService teleportationService;
 
+    @Inject
+    private BungeeService bungeeService;
+
     ProcessSynchronousPlayerLogout() {
     }
 
@@ -60,6 +64,9 @@ public class ProcessSynchronousPlayerLogout implements SynchronousProcess {
 
         // Player is now logout... Time to fire event !
         bukkitService.callEvent(new LogoutEvent(player));
+
+        // Send Bungee stuff. The service will check if it is enabled or not.
+        bungeeService.sendPlayerAuthStatus(player);
 
         service.send(player, MessageKey.LOGOUT_SUCCESS);
         ConsoleLogger.info(player.getName() + " logged out");

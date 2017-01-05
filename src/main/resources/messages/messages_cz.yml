@@ -78,3 +78,4 @@ incomplete_email_settings: 'Chyba: chybí některé důležité informace pro od
 email_send_failure: 'Email nemohl být odeslán. Kontaktujte prosím admina.'
 recovery_code_sent: 'Kód pro obnovení hesla byl odeslán na váš email.'
 recovery_code_incorrect: 'Kód pro není správný! Použijte příkaz /email recovery [email] pro vygenerování nového.'
+# TODO authmebungee_autologin: 'You have been authenticated as you are coming from another server of the network.'

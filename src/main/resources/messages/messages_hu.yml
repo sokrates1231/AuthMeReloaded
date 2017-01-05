@@ -78,3 +78,4 @@ show_no_email: '&2Ehhez a felhasználóhoz jelenleg még nincs email hozzárende
 # TODO reg_email_no_repeat_msg: '&3Please, register to the server with the command "/register <email>"'
 # TODO reg_psw_email_msg: '&3Please, register to the server with the command "/register <password> <email>"'
 # TODO email_send_failure: 'The email could not be sent. Please contact an administrator.'
+# TODO authmebungee_autologin: 'You have been authenticated as you are coming from another server of the network.'

@@ -243,7 +243,10 @@ public enum MessageKey {
     RECOVERY_CODE_SENT("recovery_code_sent"),
 
     /** The recovery code is not correct! Use /email recovery [email] to generate a new one */
-    INCORRECT_RECOVERY_CODE("recovery_code_incorrect");
+    INCORRECT_RECOVERY_CODE("recovery_code_incorrect"),
+
+    /** You have been authenticated as you are coming from another server of the network. */
+    AUTHMEBUNGEE_AUTOLOGIN("authmebungee_autologin");
 
     private String key;
     private String[] tags;

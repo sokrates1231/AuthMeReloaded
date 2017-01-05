@@ -80,3 +80,4 @@ invalid_name_case: 'Solo puedes unirte mediante el nombre de usuario %valid, no 
 email_show: '&2Tu dirección de E-Mail actual es: &f%email'
 show_no_email: '&2No tienes ningun E-Mail asociado en esta cuenta.'
 # TODO email_send_failure: 'The email could not be sent. Please contact an administrator.'
+# TODO authmebungee_autologin: 'You have been authenticated as you are coming from another server of the network.'

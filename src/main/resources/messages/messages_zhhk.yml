@@ -82,3 +82,4 @@ invalid_name_case: '&8[&6用戶系統&8] &4警告！&c你應該使用「%valid�
 # TODO email_send_failure: 'The email could not be sent. Please contact an administrator.'
 # TODO recovery_code_sent: 'A recovery code to reset your password has been sent to your email.'
 # TODO recovery_code_incorrect: 'The recovery code is not correct! Use /email recovery [email] to generate a new one'
+# TODO authmebungee_autologin: 'You have been authenticated as you are coming from another server of the network.'

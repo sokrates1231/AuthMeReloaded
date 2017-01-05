@@ -79,3 +79,4 @@ incomplete_email_settings: 'Error: Nie wszystkie opcje odpowiedzialne za wysylan
 recovery_code_sent: 'Kod odzyskiwania hasla zostal wyslany na adres email przypisany do konta.'
 recovery_code_incorrect: 'Kod odzyskiwania hasla jest bledny! Uzyj /email recovery [email] aby wygenerowac nowy.'
 email_send_failure: 'Nie mozna wyslac emaila. Skontaktuj sie z administracja.'
+# TODO authmebungee_autologin: 'You have been authenticated as you are coming from another server of the network.'

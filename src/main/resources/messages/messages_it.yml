@@ -79,3 +79,4 @@ incomplete_email_settings: 'Errore: non tutte le impostazioni richieste per invi
 email_send_failure: 'Non è stato possibile inviare l''email contenente la tua nuova password. Per favore contatta un amministratore.'
 recovery_code_sent: 'Una email contenente il codice di recupero per reimpostare la tua password è stata appena inviata al tuo indirizzo email.'
 recovery_code_incorrect: 'Il codice di recupero inserito non è corretto! Scrivi /email recovery <email> per generarne uno nuovo'
+# TODO authmebungee_autologin: 'You have been authenticated as you are coming from another server of the network.'
