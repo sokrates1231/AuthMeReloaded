@@ -28,8 +28,9 @@ public class RegistrationSettings implements SettingsHolder {
 
     @Comment({
         "Type of registration: PASSWORD or EMAIL",
-        "Password = account is registered with a password supplied by the user;",
-        "Email = password is generated and sent to the email provided by the user."
+        "PASSWORD = account is registered with a password supplied by the user;",
+        "EMAIL = password is generated and sent to the email provided by the user.",
+        "More info at https://github.com/AuthMe/AuthMeReloaded/wiki/Registration"
     })
     public static final Property<RegistrationType> REGISTRATION_TYPE =
         newProperty(RegistrationType.class, "settings.registration.type", RegistrationType.PASSWORD);
@@ -75,12 +76,12 @@ public class RegistrationSettings implements SettingsHolder {
 
     @Comment({
         "The custom join message that will be sent after a successful login,",
-        "use 'none' to use the original one.",
-        "Available variables:,",
+        "keep empty to use the original one.",
+        "Available variables:",
         "{PLAYERNAME}: the player name (no colors)",
         "{DISPLAYNAME}: the player name (with colors)"})
     public static final Property<String> CUSTOM_JOIN_MESSAGE =
-        newProperty("settings.customJoinMessage", "none");
+        newProperty("settings.customJoinMessage", "");
 
     @Comment("Should we remove the leave messages of unlogged users?")
     public static final Property<Boolean> REMOVE_UNLOGGED_LEAVE_MESSAGE =

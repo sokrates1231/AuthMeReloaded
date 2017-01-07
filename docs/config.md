@@ -1,5 +1,5 @@
 <!-- AUTO-GENERATED FILE! Do not edit this directly -->
-<!-- File auto-generated on Thu Jan 05 01:38:39 CET 2017. See docs/config/config.tpl.md -->
+<!-- File auto-generated on Sat Jan 07 11:33:48 CET 2017. See docs/config/config.tpl.md -->
 
 ## AuthMe Configuration
 The first time you run AuthMe it will create a config.yml file in the plugins/AuthMe folder, 
@@ -272,8 +272,9 @@ settings:
         # See restrictions for exceptions
         force: true
         # Type of registration: PASSWORD or EMAIL
-        # Password = account is registered with a password supplied by the user;
-        # Email = password is generated and sent to the email provided by the user.
+        # PASSWORD = account is registered with a password supplied by the user;
+        # EMAIL = password is generated and sent to the email provided by the user.
+        # More info at https://github.com/AuthMe/AuthMeReloaded/wiki/Registration
         type: 'PASSWORD'
         # Second argument the /register command should take: NONE = no 2nd argument
         # CONFIRMATION = must repeat first argument (pass or email)
@@ -298,11 +299,11 @@ settings:
     # Should we delay the join message and display it once the player has logged in?
     delayJoinMessage: false
     # The custom join message that will be sent after a successful login,
-    # use 'none' to use the original one.
-    # Available variables:,
+    # keep empty to use the original one.
+    # Available variables:
     # {PLAYERNAME}: the player name (no colors)
     # {DISPLAYNAME}: the player name (with colors)
-    customJoinMessage: 'none'
+    customJoinMessage: ''
     # Should we remove the leave messages of unlogged users?
     removeUnloggedLeaveMessage: false
     # Should we remove join messages altogether?
@@ -459,4 +460,4 @@ To change settings on a running server, save your changes to config.yml and use
 
 ---
 
-This page was automatically generated on the [AuthMe/AuthMeReloaded repository](https://github.com/AuthMe/AuthMeReloaded/tree/master/docs/) on Thu Jan 05 01:38:39 CET 2017
+This page was automatically generated on the [AuthMe/AuthMeReloaded repository](https://github.com/AuthMe/AuthMeReloaded/tree/master/docs/) on Sat Jan 07 11:33:48 CET 2017
